@@ -1,7 +1,8 @@
 import calendar
 import random
 
-from Include.lesson1.Lesson1 import Lab2
+from Include.labs.Lab1 import Lab1
+from Include.labs.Lab2 import Lab2
 
 if __name__ == '__main__':
-    Lab2(int(input()))
+    Lab1(int(input())).start()
