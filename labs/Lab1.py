@@ -1,3 +1,6 @@
+import calendar
+
+
 class Lab1:
     def __init__(self, task: int):
         self.__taskNumber = task
