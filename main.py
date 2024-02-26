@@ -1,4 +1,5 @@
-from labs.Lab1 import Lab1
+from labs.Lab3 import Lab3
 
 if __name__ == '__main__':
-    Lab1(int(input())).start()
+    Lab3(int(input())).start()
+
