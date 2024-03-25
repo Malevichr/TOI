@@ -54,6 +54,8 @@ class Lab5:
         str = "1+25+3"
         summands = map(int, str.split("+"))
         print(sum(summands))
+
     def __task8(self):
         str = input()
         print(str[::-1] == str)
+
