@@ -56,7 +56,7 @@ class Lab6:
             print(e)
         a = []
         i = 0
-        print("Введите числа\n")
+        print("Введите числа")
 
         while (i < N):
             try:
@@ -68,7 +68,7 @@ class Lab6:
         print(*a)
         print(f'Sred: {sum(a) / N}')
     def __task6(self):
-        a = [randint(-20, 20) for i in range(20)]
+        a = [random.randint(-20, 20) for i in range(20)]
         print(*a)
         mn = int(input("min = "))
         mx = int(input("max = "))
