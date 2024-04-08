@@ -52,6 +52,17 @@ class Lab7:
 
     '''Необходимо написать программу, в которой сортировка выполняется «методом камня» –
      самый «тяжёлый» элемент опускается в конец массива.'''
+
+
+    def __task4(self):
+        array = [random.randint(0, 4) for i in range(5)]
+        print(array)
+        for i in range(len(array)):
+            for j in range(len(array)):
+                if (array[i] > array[j]):
+                    array[i], array[j] = array[j], array[i]
+        print(array)
+    '''Необходимо написать программу, которая сортирует массив (быстрой сортировкой) по возрастанию первой цифры числа.'''
     def __qSort(self, A, nStart, nEnd):
         if nStart >= nEnd: return
         L = nStart
@@ -66,16 +77,6 @@ class Lab7:
                 R -= 1
         self.__qSort(A, nStart, R)  # рекурсивные вызовы
         self.__qSort(A, L, nEnd)
-
-    def __task4(self):
-        array = [random.randint(0, 4) for i in range(5)]
-        print(array)
-        for i in range(len(array)):
-            for j in range(len(array)):
-                if (array[i] > array[j]):
-                    array[i], array[j] = array[j], array[i]
-        print(array)
-    '''Необходимо написать программу, которая сортирует массив (быстрой сортировкой) по возрастанию первой цифры числа.'''
     def __task5(self):
         array = [random.randint(0, 4) for i in range(5)]
         print(array)
